@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ShakapackerCssTest</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_pack_tag "test_import", "test_require", "test_import_all" %>
+    <%= javascript_pack_tag "test_import", "test_require", "test_import_all", "test_dynamic_import" %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
